@@ -73,4 +73,59 @@ section .lead {
   color: #7280a7;
   margin: 0 2.5625em;
 }
+
+section .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.875em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  border-radius: 0.625em;
+  background: rgba(224, 232, 255, 0.4);
+}
+
+section .plan .icon {
+  background: url(../images/icon-music.svg) no-repeat;
+  background-size: cover;
+  width: 3em;
+  height: 3em;
+  margin: 1.125em 0 1.125em 1em;
+}
+
+section .plan ul {
+  list-style: none;
+  margin-left: 1.25em;
+  margin-right: 3.25em;
+}
+
+section .plan ul .title {
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+section .plan ul .price {
+  color: #7280a7;
+}
+
+section .plan .option {
+  color: #3829e0;
+  font-weight: 700;
+  margin-right: 1em;
+}
+
+section .plan .option a {
+  cursor: pointer;
+}
+
+section .plan .option a:hover {
+  text-decoration: none;
+  color: rgba(56, 41, 224, 0.75);
+}
 /*# sourceMappingURL=style.css.map */
