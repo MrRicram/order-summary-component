@@ -1,0 +1,34 @@
+@media only screen and (min-width: 39em) {
+    body {
+        background: url(../images/pattern-background-desktop.svg) no-repeat;
+        background-size: cover;
+        background-color: $paleblue;
+    }
+
+    header {
+        width: 450px;
+        height: 220px;
+    }
+
+    section {
+        width: 450px;
+
+        .lead {
+            margin: 0 4.875em;
+        }
+
+        .plan {
+            margin-left: 3.125em;
+            margin-right: 3.125em;
+        }
+
+        button {
+            width: 354px;
+        }
+
+        a {
+            margin-top: 0.625em;
+            margin-bottom: 3.25em;
+        }
+    }
+}

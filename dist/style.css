@@ -30,7 +30,7 @@ body {
           align-items: center;
 }
 
-.bg-image {
+header {
   background: url(../images/illustration-hero.svg) no-repeat;
   background-size: cover;
   width: 325px;
@@ -127,5 +127,88 @@ section .plan .option a {
 section .plan .option a:hover {
   text-decoration: none;
   color: rgba(56, 41, 224, 0.75);
+  -webkit-transition: color 100ms ease-in, -webkit-text-decoration 100ms ease-in;
+  transition: color 100ms ease-in, -webkit-text-decoration 100ms ease-in;
+  transition: color 100ms ease-in, text-decoration 100ms ease-in;
+  transition: color 100ms ease-in, text-decoration 100ms ease-in, -webkit-text-decoration 100ms ease-in;
+}
+
+section button {
+  background: #3829e0;
+  color: #f5f7ff;
+  font-weight: 700;
+  margin: 1.5625em;
+  width: 278px;
+  height: 50px;
+  border: none;
+  border-radius: 0.625em;
+  cursor: pointer;
+}
+
+section button:hover, section button:active {
+  background: rgba(56, 41, 224, 0.75);
+  -webkit-transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;
+}
+
+section a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #7280a7;
+  margin-bottom: 2.25em;
+}
+
+section a:hover, section a:active {
+  color: #1f2f56;
+  -webkit-transition: color 150ms ease-in;
+  transition: color 150ms ease-in;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: #7280a7;
+  text-align: center;
+  font-size: 0.75em;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #3829e0;
+  font-weight: bold;
+}
+
+.attribution a:hover {
+  color: rgba(56, 41, 224, 0.75);
+}
+
+@media only screen and (min-width: 39em) {
+  body {
+    background: url(../images/pattern-background-desktop.svg) no-repeat;
+    background-size: cover;
+    background-color: #e0e8ff;
+  }
+  header {
+    width: 450px;
+    height: 220px;
+  }
+  section {
+    width: 450px;
+  }
+  section .lead {
+    margin: 0 4.875em;
+  }
+  section .plan {
+    margin-left: 3.125em;
+    margin-right: 3.125em;
+  }
+  section button {
+    width: 354px;
+  }
+  section a {
+    margin-top: 0.625em;
+    margin-bottom: 3.25em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

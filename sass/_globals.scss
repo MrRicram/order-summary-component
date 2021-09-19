@@ -21,7 +21,7 @@ body {
     align-items: center;
 }
 
-.bg-image {
+header {
     background: url(../images/illustration-hero.svg) no-repeat;
     background-size: cover;
     width: 325px;
@@ -105,11 +105,57 @@ section {
                 &:hover {
                     text-decoration: none;
                     color: $ligthbrightblue;
+                    transition: color 100ms ease-in, text-decoration 100ms ease-in;
                 }
-            }
+            } 
+        }
+    }
 
-            
+    button {
+        background: $brightblue;
+        color: $verypaleblue;
+        font-weight: 700;
+        margin: 1.5625em;
+        width: 278px;
+        height: 50px;
+        border: none;
+        border-radius: 0.625em;
+        cursor: pointer;
+
+        &:hover, &:active {
+            background: $ligthbrightblue;
+            transition: background 250ms ease-in-out;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        color: $desaturatedblue;
+        margin-bottom: 2.25em;
+
+        &:hover, &:active {
+            color: $darkblue;
+            transition: color 150ms ease-in;
         }
     }
 }
 
+.attribution {
+    position: absolute;
+    bottom: 0;
+    color: $desaturatedblue;
+    text-align: center;
+    font-size: 0.75em;
+    margin-bottom: 10px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: $brightblue;
+    font-weight: bold;
+}  
+
+.attribution a:hover {
+  color: $ligthbrightblue;
+}
