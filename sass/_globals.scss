@@ -14,7 +14,7 @@ body {
     font-weight: 500;
     background: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: $paleblue;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ section {
     width: 325px;
     border-radius: 0 0 1.25em 1.25em;
 
-    h2 {
+    h1 {
         margin-top: 2.1875em;
         color: $darkblue;
         font-weight: 900;
@@ -141,21 +141,27 @@ section {
     }
 }
 
-.attribution {
-    position: absolute;
-    bottom: 0;
-    color: $desaturatedblue;
-    text-align: center;
-    font-size: 0.75em;
-    margin-bottom: 10px;
+footer {
+    display: flex;
+    justify-content: center;
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        color: $desaturatedblue;
+        text-align: center;
+        font-size: 0.75em;
+        margin-bottom: 10px;
+    }
+    
+    .attribution a {
+        text-decoration: none;
+        color: $brightblue;
+        font-weight: bold;
+    }  
+    
+    .attribution a:hover {
+      color: $ligthbrightblue;
+    }
 }
 
-.attribution a {
-    text-decoration: none;
-    color: $brightblue;
-    font-weight: bold;
-}  
-
-.attribution a:hover {
-  color: $ligthbrightblue;
-}

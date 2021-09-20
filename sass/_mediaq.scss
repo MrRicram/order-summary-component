@@ -1,7 +1,7 @@
 @media only screen and (min-width: 39em) {
     body {
         background: url(../images/pattern-background-desktop.svg) no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-color: $paleblue;
     }
 

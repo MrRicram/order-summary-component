@@ -16,7 +16,7 @@ body {
   font-weight: 500;
   background: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: #e0e8ff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,7 +55,7 @@ section {
   border-radius: 0 0 1.25em 1.25em;
 }
 
-section h2 {
+section h1 {
   margin-top: 2.1875em;
   color: #1f2f56;
   font-weight: 900;
@@ -164,7 +164,16 @@ section a:hover, section a:active {
   transition: color 150ms ease-in;
 }
 
-.attribution {
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .attribution {
   position: absolute;
   bottom: 0;
   color: #7280a7;
@@ -173,20 +182,20 @@ section a:hover, section a:active {
   margin-bottom: 10px;
 }
 
-.attribution a {
+footer .attribution a {
   text-decoration: none;
   color: #3829e0;
   font-weight: bold;
 }
 
-.attribution a:hover {
+footer .attribution a:hover {
   color: rgba(56, 41, 224, 0.75);
 }
 
 @media only screen and (min-width: 39em) {
   body {
     background: url(../images/pattern-background-desktop.svg) no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: #e0e8ff;
   }
   header {
